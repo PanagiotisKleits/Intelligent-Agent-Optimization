@@ -14,7 +14,7 @@ Focus: The observations track rotation deltas (z and x axes) and the relative po
 
 Designing the Reward FunctionThe core of this agent's stability lies in its reward shaping. I replaced binary "step rewards" with a continuous mathematical function to ensure the agent is always trying to reach the absolute center, not just "stay on the board."I used the following formula for the reward (r):
 
-r = 0.1/(1.0 + distanceToCenter)
+$$reward = \frac{0.1}{1.0 + d}$$
 
 This inverse-distance approach ensures that as the ball approaches the center , the reward increases. This avoids the "lazy agent" problem where a model settles for a sub-optimal policy just to avoid falling off.
 
