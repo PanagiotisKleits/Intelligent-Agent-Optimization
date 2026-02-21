@@ -1,7 +1,9 @@
 3D Ball Balance: Custom Control with ML-Agents
+
 This project is an implementation of an intelligent balancing agent using the Unity ML-Agents framework. The goal was to move beyond the standard tutorial logic and build an agent that achieves high-precision stability through custom observation handling and a proximity-based reward system.
 
 Observation Strategy: 
+
 Instead of a simple vector sensor, I used Reflection-based Observables with numStackedObservations: 9.
 
 The Logic: In physics-based tasks like balancing, a single snapshot of the position isn't enough.
@@ -27,5 +29,6 @@ Technical Setup
 Framework: Unity ML-Agents.
 
 Logic: C# script (Ball3DHardAgent.cs).
+
 
 Backend: PyTorch.
